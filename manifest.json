@@ -1,0 +1,10 @@
+{
+    "name": "FM FARM KEEPERS — Database Ternakan",
+    "short_name": "FM FARM KEEPERS",
+    "description": "Database ternakan pribadi FM FARM KEEPERS",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#090909",
+    "theme_color": "#0b0b0b",
+    "lang": "id-ID"
+}
