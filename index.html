@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b0b0b">
+    <meta name="description" content="Database ternakan pribadi FM FARM KEEPERS">
+    <title>FM FARM KEEPERS — Database Ternakan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<main class="app">
+    <header class="header">
+        <div class="brand-logo">FM</div>
+        <h1>FM FARM KEEPERS</h1>
+        <p>DATABASE TERNAKAN</p>
+    </header>
+
+    <section class="search-section">
+        <label for="searchRing">🔍 CARI NO. SERI RING</label>
+        <div class="search-box">
+            <input type="text" id="searchRing" placeholder="Masukkan nomor ring..." autocomplete="off">
+            <button id="searchButton" type="button">CARI</button>
+        </div>
+    </section>
+
+    <section class="menu">
+        <button class="menu-button primary" id="addButton" type="button">
+            <span>＋</span> TAMBAH TERNAKAN
+        </button>
+        <button class="menu-button" id="allButton" type="button">
+            <span>☷</span> SEMUA TERNAKAN
+        </button>
+
+        <div class="backup-menu">
+            <button class="backup-button" id="backupButton" type="button">💾 BACKUP DATA</button>
+            <button class="backup-button" id="restoreButton" type="button">📥 RESTORE DATA</button>
+            <input type="file" id="restoreFile" accept=".json,application/json" hidden>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="pigeon-icon">🕊️</div>
+        <p>Catat. Simpan. Kembangkan.</p>
+        <strong>FM FARM KEEPERS</strong>
+    </footer>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="app.js"></script>
+</body>
+</html>
