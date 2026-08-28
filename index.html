@@ -12,6 +12,17 @@
 <link rel="apple-touch-icon" href="./icons/icon-192x192.png">
 </head>
 <body>
+    <!-- PREMIUM LOADING SCREEN -->
+<div id="appLoader">
+    <div class="loader-logo-wrap">
+        <img
+            src="./icons/icon-192x192.png"
+            alt="FM FARM KEEPERS"
+            class="loader-logo"
+        >
+    </div>
+</div>
+
 <main class="app">
     <header class="header">
         <div class="brand-logo">FM</div>
@@ -50,5 +61,20 @@
 </main>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="app.js"></script>
+<script>
+    window.addEventListener("load", function () {
+        setTimeout(function () {
+            const loader = document.getElementById("appLoader");
+
+            if (loader) {
+                loader.classList.add("loader-hidden");
+
+                setTimeout(function () {
+                    loader.remove();
+                }, 500);
+            }
+        }, 900);
+    });
+</script>
 </body>
 </html>
